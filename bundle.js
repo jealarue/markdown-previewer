@@ -113,6 +113,14 @@
                     className: e.icon,
                     onClick: e.onClick
                 }))
+                ,
+                 n = e=>React.createElement("textarea", {
+                    id: "editor",
+                    onChange: e.onChange,
+                    type: "text",
+                    value: e.markdown
+                })
+
             }
         
                   
