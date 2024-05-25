@@ -120,6 +120,14 @@
                     type: "text",
                     value: e.markdown
                 })
+                , i = t=>React.createElement("div", {
+                    dangerouslySetInnerHTML: {
+                        __html: marked(t.markdown, {
+                            renderer: e
+                        })
+                    },
+                    id: "preview"
+                })
 
             }
         
