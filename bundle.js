@@ -17,7 +17,7 @@
     const e = new marked.Renderer();
   
     // Override the default link rendering to open links in a new tab
-    e.link = function (e, a) {
+    e.link = function (e, t, a) {
       // Return the modified HTML for the link
       return '<a target="_blank" href="'.concat(e, '">').concat(a, "</a>");
     };
@@ -101,10 +101,21 @@
                     markdown: this.state.markdown // Pass markdown content as prop
                 }))
             );
+        } 
         }
+                // Toolbar component definition
+                const a = e=>React.createElement("div", {
+                    className: "toolbar"
+                }, React.createElement("i", {
+                    className: "fa fa-free-code-camp",
+                    title: "no-stack-dub-sack"
+                }), e.text, React.createElement("i", {
+                    className: e.icon,
+                    onClick: e.onClick
+                }))
+            }
         
-        
-      
-    }
-  };
+                  
+              
+            
   
