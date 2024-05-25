@@ -43,8 +43,21 @@
         (this.handleEditorMaximize = this.handleEditorMaximize.bind(this)),
         (this.handlePreviewMaximize = this.handlePreviewMaximize.bind(this));
       }
-  
-      // Add your event handler methods (e.g., handleChange, handleEditorMaximize, handlePreviewMaximize) here
+        handleChange(e) {
+        // Update the markdown content
+        this.setState({ markdown: e.target.value }) 
+      }
+        handleEditorMaximize() {
+        // Toggle the editor maximized state
+        this.setState({ editorMaximized: !this.state.editorMaximized }) 
+      }
+        handlePreviewMaximize() {
+        this.setState({ previewMaximized: !this.state.previewMaximized}) 
+      }
+        // Render the component next
+                
+        
+      
     }
   };
   
