@@ -2,7 +2,7 @@
     "name": "markdown_previewer",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://jealarue.github.io/react-app",
+    "homepage": "https://jealarue.github.io/markdown-previewer/",
     "scripts": {
       "start": "react-scripts start",
       "build": "react-scripts build",
